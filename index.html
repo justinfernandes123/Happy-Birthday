@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Romantic Background Elements -->
+    <div class="background">
+        <div class="hearts"></div>
+        <div class="stars"></div>
+    </div>
+
+    <!-- PAGE 1: BIRTHDAY -->
+    <div id="birthday-page" class="page">
+        <div class="container">
+            <h1>🎂 Happy Birthday! 🎂</h1>
+            <p>Please enter your name to unlock your gift:</p>
+            <input type="text" id="name-input" placeholder="Your Name">
+            <button id="next-btn">Next ➔</button>
+        </div>
+    </div>
+
+    <!-- PAGE 2: PROPOSAL (HIDDEN INITIALLY) -->
+    <div id="proposal-page" class="page" style="display: none;">
+        <div class="container">
+            <h1 id="greeting">Hi <span id="name">Beautiful</span>! ❤️</h1>
+            <p>I have a very special question for you...</p>
+            <div class="proposal-box">
+                <p id="proposal-text">Will you be my girlfriend?</p>
+                <div class="buttons">
+                    <button id="yes-btn">YES!</button>
+                    <button id="no-btn">No</button>
+                </div>
+            </div>
+            <div id="hearts-container"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
